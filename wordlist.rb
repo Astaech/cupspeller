@@ -17,18 +17,6 @@ module Cupspeller
       @@MAX_WRD.times { @word_list.push list[rand lines] }
     end
 
-    def gameplay
-      time = Time.new
-      resp = ''
-      @word_list.each do |word|
-        until resp == word do
-          puts word
-          resp = gets[0..-2]
-        end
-      end
-      Time.new - time
-    end
-
     def to_s
       @word_list.inspect
     end
