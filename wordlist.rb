@@ -2,7 +2,7 @@
 
 module Cupspeller
   class WordList
-    @@PATH = '/home/astaech/Documents/projets/cupspeller/word_list.txt'
+    @@PATH = './word_list.txt'
     @@MAX_WRD = 5
 
     attr_reader :word_list
